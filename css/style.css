@@ -92,7 +92,7 @@ body {
 }
 /* Navbar Styling */
 .navbar {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 12px rgba(252, 164, 0, 0.3);
   transition: all 0.3s ease;
   border-bottom: 2px solid transparent;
 }
