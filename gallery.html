@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elitz-gallery</title>
+     	<!-- Bootstrap -->
+	<link rel="stylesheet" href="./css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="./css/style.css"/>
+	<!-- Font Awesome (local) -->
+	<link rel="stylesheet" href="./css/pall.min.css">
+	<script defer src="./js/bootstrap.bundle.min.js"></script>
+  
+ <style>
+  /*  GALLERY GRID  */
+.gallery-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+gap: 1rem;
+padding: 1rem;
+}
+.gallery-grid img {
+width: 100%;
+height: 220px;
+object-fit: cover;
+transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+.gallery-grid img:hover {
+transform: scale(1.06);
+box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+}
+/*  TABLET  */
+@media (max-width: 992px) {
+.gallery-grid img {
+height: 350px;
+}
+}
+/*  MOBILE  */
+@media (max-width: 576px) {
+.gallery-grid img {
+height: 300px;
+}
+}
+ </style>
+</head>
+  
+  
+  
+  
+<body class="bg-dark">
+       <!-- Navigation Bar -->
+    <section id="menu-section">
+      <nav
+        class="navbar navbar-expand-md navbar-dark fixed-top text-light"
+        style="
+          background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
+          padding-top: 0;
+          padding-bottom: 0;
+        "
+      >
+        <div class="container-fluid px-3 px-lg-5">
+          <!-- Brand Logo & Name -->
+          <div class="navbar-brand-wrapper d-flex align-items-center">
+            <img
+              class="me-2 img-fluid"
+              src="./assets/restaurantGallery/logo.png"
+              alt="Elitz Logo"
+              style="max-width: 70px; max-height: 50px"
+            />
+            <span class="navbar-brand text-warning h1 mb-0" id="nav-title"
+              >Elitz</span
+            >
+          </div>
+          <!-- Mobile Toggle Button -->
+          <button
+            class="navbar-toggler shadow-sm border-1 border-warning"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarID"
+            aria-controls="navbarID"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            style="padding: 0.25rem 0.75rem"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Navbar Items -->
+          <div
+            class="collapse navbar-collapse justify-content-md-end"
+            id="navbarID"
+          >
+            <div class="navbar-nav align-items-center">
+              <a
+                class="nav-link text-center text-light position-relative px-3 py-2 mx-1"
+                aria-current="page"
+                href="./index.html"
+                >Home</a
+              >
+              <a
+                class="nav-link text-light position-relative px-3 py-2 mx-1"
+                href="./menu.html"
+                >Menus</a
+              >
+              <a
+                class="nav-link text-light position-relative active px-3 py-2 mx-1"
+                href="./gallery.html"
+                >Gallery</a
+              >
+              <!-- Dropdown with Styling -->
+              <li class="nav-item dropdown ms-lg-2">
+                <a
+                  class="nav-link dropdown-toggle text-light position-relative px-3 py-2"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  id="aboutDropdown"
+                >
+                  About
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-menu-end border-warning"
+                  style="
+                    background: linear-gradient(
+                      135deg,
+                      #2c2c2c 0%,
+                      #1a1a1a 100%
+                    );
+                    border-width: 2px;
+                  "
+                >
+                  <li>
+                    <a
+                      class="dropdown-item text-light py-2 px-3"
+                      href="./about.html"
+                    >
+                      <i class="fas fa-building me-2"></i>About Company
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-light py-2 px-3"
+                      href="about.html#get-in-touch"
+                    >
+                      <i class="fas fa-address-book me-2"></i>Contacts
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+
+<div class="gallery-heading-container mx-auto py-3 border rounded-pill border-warning" style="margin-top: 5rem;"> 
+  <h1 class="fw-bold text-center gallery-heading">Our Gallery</h1>
+  <h6 class="text-warning text-center gallery-description">A visual journey through our most irresistible dishes.</h6>
+</div>
+
+<section class="gallery-spoon-section">
+ <div class="container-fluid heading border border-warning rounded px-2 my-3 py-3"> 
+  <h3 class="text-white text-center categories-heading">🍴Spoon & Fork Delights🍴 </h3>
+
+
+<div class="gallery-grid">
+<img class="rounded img-thumbnail"  src="./assets/spoon-gallery-section/bg-1.jpg" alt="jollof rice">
+<img class="rounded img-thumbnail"  src="./assets/spoon-gallery-section/bg-2.jpg" alt="spaghetti">
+<img class="rounded img-thumbnail"  src="./assets/spoon-gallery-section/bg-4.jpg" alt="yam porridge">
+<img class="rounded img-thumbnail"  src="./assets/spoon-gallery-section/bg-5.jpg" alt="beans">
+<img class="rounded img-thumbnail"  src="./assets/spoon-gallery-section/bg-6.jpg" alt="white rice with stew">
+<img  class="rounded img-thumbnail" src="./assets/spoon-gallery-section/bg-7.jpg" alt="white rice with sauce">
+<img  class="rounded img-thumbnail" src="./assets/spoon-gallery-section/bg-8.jpg" alt="indomie">
+<img  class="rounded img-thumbnail" src="./assets/spoon-gallery-section/bg-9.jpg" alt="white rice">
+<img  class="rounded img-thumbnail" src="./assets/spoon-gallery-section/bg-10.jpg" alt="jollof rice">
+<img  class="rounded img-thumbnail" src="./assets/spoon-gallery-section/bg-13.jpg" alt="spaghetti">
+<img  class="rounded img-thumbnail" src="./assets/spoon-gallery-section/bg-14.jpg" alt="coconut rice">
+<img  class="rounded img-thumbnail" src="./assets/spoon-gallery-section/bg-15.jpg" alt="jollof rice">
+<img  class="rounded img-thumbnail" src="./assets/spoon-gallery-section/bg-16.jpg" alt="white rice and beans">
+<img  class="rounded img-thumbnail" src="./assets/spoon-gallery-section/bg-17.jpg" alt="steak">
+<img  class="rounded img-thumbnail" src="./assets/spoon-gallery-section/bg-18.jpg" alt="yam porridge">
+<img  class="rounded img-thumbnail" src="./assets/spoon-gallery-section/bg-19.jpg" alt="spaghetti">
+<img  class="rounded img-thumbnail" src="./assets/spoon-gallery-section/bg-20.jpg" alt="jollof rice">
+<img  class="rounded img-thumbnail" src="./assets/spoon-gallery-section/bg-21.jpg" alt="steak">
+<img  class="rounded img-thumbnail" src="./assets/spoon-gallery-section/bg-23.jpg" alt="jollof rice">
+<img  class="rounded img-thumbnail" src="./assets/spoon-gallery-section/bg-24.jpg" alt="jollof rice">
+<img  class="rounded img-thumbnail" src="./assets/spoon-gallery-section/bg-25.jpg" alt="indomie">
+<img  class="rounded img-thumbnail" src="./assets/spoon-gallery-section/bg-26.jpg" alt="coconut rice">
+<img  class="rounded img-thumbnail" src="./assets/spoon-gallery-section/bg-27.jpg" alt="coconut rice">
+<img  class="rounded img-thumbnail" src="./assets/spoon-gallery-section/bg-28.jpg" alt="white rice">
+<img  class="rounded img-thumbnail" src="./assets/spoon-gallery-section/bg-29.jpg" alt="yam and egg">
+<img  class="rounded img-thumbnail" src="./assets/spoon-gallery-section/bg-30.jpg" alt="white rice">
+<img  class="rounded img-thumbnail" src="./assets/spoon-gallery-section/bg-31.jpg" alt="beans">
+<img  class="rounded img-thumbnail" src="./assets/spoon-gallery-section/bg-32.jpg" alt="white rice and beans">
+<img  class="rounded img-thumbnail" src="./assets/spoon-gallery-section/bg-33.jpg" alt="white rice and beans">
+<img  class="rounded img-thumbnail" src="./assets/spoon-gallery-section/bg-34.jpg" alt="white rice and beans">
+<img  class="rounded img-thumbnail" src="./assets/spoon-gallery-section/bg-35.jpg" alt="steak">
+<img  class="rounded img-thumbnail" src="./assets/spoon-gallery-section/bg-36.jpg" alt="steak">
+<img  class="rounded img-thumbnail" src="./assets/spoon-gallery-section/bg-37.jpg" alt="yam and egg">
+<img  class="rounded img-thumbnail" src="./assets/spoon-gallery-section/bg-38.jpg" alt="yam and egg">
+</div>
+</section>
+
+
+
+
+
+
+
+
+<section class="gallery-swallow-section pt-2">
+<div class="text-center">
+<span class="swallow-line"></span>
+<h3 class="categories-heading text-warning">Swallow Favourites</h3>
+<p class="categories-description">Traditional meals, crafted to perfection</p>
+<span class="swallow-line"></span>
+</div>
+
+
+<div class="carousel-frame mx-auto mb-4">
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+<!-- indicators -->
+<div class="carousel-indicators">
+<button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active"></button>
+<button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1">
+</button>
+<button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2">
+</button>
+<button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="3">
+</button>
+<button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="4">
+</button>
+<button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="5">
+</button>
+</div>
+
+
+<div class="carousel-inner">
+<div class="carousel-item gallery-carousel-item active">
+<img src="./assets/swallow-gallery-section/Amala.jpg" alt="Amala" class="d-block rounded-circle">
+<div class="carousel-caption"><h5>Amala</h5></div>
+</div>
+<div class="carousel-item gallery-carousel-item">
+<img src="./assets/swallow-gallery-section/eba.jpg" alt="Eba" class="d-block rounded-circle">
+<div class="carousel-caption"><h5>Eba</h5></div>
+</div>
+<div class="carousel-item gallery-carousel-item">
+<img src="./assets/swallow-gallery-section/fufu.jpg" alt="Fufu" class="d-block rounded-circle">
+<div class="carousel-caption"><h5>Fufu</h5></div>
+</div>
+<div class="carousel-item gallery-carousel-item">
+<img src="./assets/swallow-gallery-section/semo-vita.jpg" alt="semo-vita" class="d-block rounded-circle">
+<div class="carousel-caption"><h5>Semo-Vita</h5></div>
+</div>
+<div class="carousel-item gallery-carousel-item">
+<img src="./assets/swallow-gallery-section/pounded-yam.jpg" alt="pounded-yam" class="d-block rounded-circle">
+<div class="carousel-caption"><h5>Pounded Yam</h5></div>
+</div>
+<div class="carousel-item gallery-carousel-item">
+<img src="./assets/swallow-gallery-section/tuwo.jpg" alt="tuwo" class="d-block rounded-circle">
+<div class="carousel-caption"><h5>Tuwo</h5></div>
+</div>
+</div>
+<!-- controls -->
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+<span class="carousel-control-prev-icon"></span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+<span class="carousel-control-next-icon"></span>
+</button>
+</div>
+</div>
+  
+  
+<div class="gallery-grid swallow-grid">
+<img class="rounded img-thumbnail" src="./assets/swallow-gallery-section/okra-1.jpg" alt="okra-image-1">
+<img class="rounded img-thumbnail" src="./assets/swallow-gallery-section/okra-2.jpg" alt="okra-image-2">
+<img class="rounded img-thumbnail"  src="./assets/swallow-gallery-section/okra-3.jpg" alt="okra-image-3">
+<img class="rounded img-thumbnail"  src="./assets/swallow-gallery-section/okra-4.jpg" alt="okra-image-4">
+<img class="rounded img-thumbnail"  src="./assets/swallow-gallery-section/efo-1.jpg" alt="efo-image-1">
+<img class="rounded img-thumbnail"  src="./assets/swallow-gallery-section/efo-2.jpg" alt="efo-image-2">
+<img  class="rounded img-thumbnail" src="./assets/swallow-gallery-section/efo-3.jpg" alt="efo-image-3">
+<img  class="rounded img-thumbnail" src="./assets/swallow-gallery-section/efo-4.jpg" alt="efo-image-4">
+<img  class="rounded img-thumbnail" src="./assets/swallow-gallery-section/efo-5.jpg" alt="efo-image-5">
+<img  class="rounded img-thumbnail" src="./assets/swallow-gallery-section/ewedu-1.jpg" alt="ewedu-image-1">
+<img  class="rounded img-thumbnail" src="./assets/swallow-gallery-section/ewedu-2.jpg" alt="ewedu-image-2">
+<img  class="rounded img-thumbnail" src="./assets/swallow-gallery-section/ewedu-3.jpg" alt="ewedu-image-3">
+<img  class="rounded img-thumbnail" src="./assets/swallow-gallery-section/gbegiri-1.jpg" alt="gbegiri-image-1">
+<img class="rounded img-thumbnail"  src="./assets/swallow-gallery-section/gbegiri-2.jpg" alt="gbegiri-image-2">
+<img  class="rounded img-thumbnail" src="./assets/swallow-gallery-section/ogbono-1.jpg" alt="ogbono-image-1">
+<img  class="rounded img-thumbnail" src="./assets/swallow-gallery-section/ogbono-2.jpg" alt="ogbono-image-2">
+<img class="rounded img-thumbnail"  src="./assets/swallow-gallery-section/ogbono-3.jpg" alt="ogbono-image-3">
+<img  class="rounded img-thumbnail" src="./assets/swallow-gallery-section/egusi-1.jpg" alt="egusi-image-1">
+<img class="rounded img-thumbnail"  src="./assets/swallow-gallery-section/egusi-2.jpg" alt="egusi-image-2">
+<img class="rounded img-thumbnail"  src="./assets/swallow-gallery-section/egusi-3.jpg" alt="egusi-image-3">
+<img class="rounded img-thumbnail"  src="./assets/swallow-gallery-section/egusi-4.jpg" alt="egusi-image-4">
+</div>
+</section>
+
+ <a href="#top" class="btn btn-warning floating-btn shadow-lg">
+    <i class="fa fa-arrow-up"></i>
+  </a>
+
+</body>
+</html>

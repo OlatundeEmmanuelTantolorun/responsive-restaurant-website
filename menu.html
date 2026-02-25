@@ -1,0 +1,817 @@
+ <!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Elitz-menu</title>
+      	<!-- Bootstrap -->
+	<link rel="stylesheet" href="./css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="./css/style.css"/>
+	<!-- Font Awesome (local) -->
+	<link rel="stylesheet" href="./css/pall.min.css">
+	<script defer src="./js/bootstrap.bundle.min.js"></script>
+</head>
+
+
+
+
+
+<body class="bg-dark" id="top">
+     <!-- NavBar Section -->
+    <section id="menu-section">
+      <nav
+        class="navbar navbar-expand-md navbar-dark text-light fixed-top"
+        style="
+          background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
+          padding-top: 0;
+          padding-bottom: 0;
+        "
+      >
+        <div class="container-fluid px-3 px-lg-5">
+          <!-- Brand Logo & Name -->
+          <div class="navbar-brand-wrapper d-flex align-items-center">
+            <img
+              class="me-2 img-fluid"
+              src="./assets/restaurantGallery/logo.png"
+              alt="Elitz Logo"
+              style="max-width: 70px; max-height: 50px"
+            />
+            <span class="navbar-brand text-warning h1 mb-0" id="nav-title"
+              >Elitz</span
+            >
+          </div>
+          <!-- Mobile Toggle Button -->
+          <button
+            class="navbar-toggler shadow-sm border-1 border-warning"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarID"
+            aria-controls="navbarID"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            style="padding: 0.25rem 0.75rem"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Navbar Items -->
+          <div
+            class="collapse navbar-collapse justify-content-md-end"
+            id="navbarID"
+          >
+            <div class="navbar-nav align-items-center">
+              <a
+                class="nav-link text-center text-light position-relative px-3 py-2 mx-1"
+                aria-current="page"
+                href="./index.html"
+                >Home</a
+              >
+              <a
+                class="nav-link text-light active position-relative px-3 py-2 mx-1"
+                href="./menu.html"
+                >Menus</a
+              >
+              <a
+                class="nav-link text-light position-relative px-3 py-2 mx-1"
+                href="./gallery.html"
+                >Gallery</a
+              >
+              <!-- Dropdown with Styling -->
+              <li class="nav-item dropdown ms-lg-2">
+                <a
+                  class="nav-link dropdown-toggle text-light position-relative px-3 py-2"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  id="aboutDropdown"
+                >
+                  About
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-menu-end border-warning"
+                  style="
+                    background: linear-gradient(
+                      135deg,
+                      #2c2c2c 0%,
+                      #1a1a1a 100%
+                    );
+                    border-width: 2px;
+                  "
+                >
+                  <li>
+                    <a
+                      class="dropdown-item text-light py-2 px-3"
+                      href="./about.html"
+                    >
+                      <i class="fas fa-building me-2"></i>About Company
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-light py-2 px-3"
+                      href="about.html#get-in-touch"
+                    >
+                      <i class="fas fa-address-book me-2"></i>Contacts
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+ 
+ 
+ 
+ 
+ 
+  <!-- Main menu -->
+ <section class="menu-section-bg py-5">
+      
+    <h1 class="main-header my-5 text-center fw-bold">Our Menu</h1>
+    
+<main class="menu-spoon-section border border-warning rounded shadow-lg mx-3">      
+  <div class="text-center text-white">
+      <span class="text-warning"><hr /></span>
+          <h1 class="text-warning categories-heading">Spoon Delights</h1>
+      <p class="categories-description text-light">featuring soups, stews, and other spoon-friendly meals
+     </p>
+  </div>
+<span class="text-warning"><hr /></span>
+ 
+<div id="carouselExampleIndicator1" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicator1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicator1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicator1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicator1" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicator1" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicator1" data-bs-slide-to="5" aria-label="Slide 6"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicator1" data-bs-slide-to="6" aria-label="Slide 7"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicator1" data-bs-slide-to="7" aria-label="Slide 8"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicator1" data-bs-slide-to="8" aria-label="Slide 9"></button>
+  </div>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="card mx-auto">
+               <div class="hover-swap">
+                   <img src="./assets/spoon-gallery-section/bg-25.jpg" class="card-img-top img first" alt="Noodles" >
+  <img class="effect img-thumbnail img second rounded" src="./assets/spoon-gallery-section/bg-8.jpg" alt="Noodles-2"  >
+  </div>
+
+  <div class="card-body bg-dark text-light">
+      <div class="row">
+        <div class="col">
+           <h5 class="food-name text-start">Noodles</h5>
+        </div>
+        <div class="col food-price h3 text-warning text-end">($2000)</div>
+      </div>
+    <p class="card-text">
+    <span class="text-warning food-content-heading h5">Components:</span><br />
+   <span class="food-content"> Noodles | Sausage | Egg
+   </span>
+    </p>
+   <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#reserveModal">Reserve Now</button>
+<button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#orderModal">Order Now</button>
+  </div>
+ </div>
+</div>
+    
+    
+    <div class="carousel-item">
+      <div class="card mx-auto">
+       <div class="hover-swap">
+  <img src="./assets/spoon-gallery-section/bg-13.jpg" class="card-img-top img first" alt="Pasta">
+  <img class="effect img-thumbnail img second rounded" src="./assets/spoon-gallery-section/bg-2.jpg" alt="pasta-2">
+</div>
+  <div class="card-body bg-dark text-light">
+    <div class="row">
+        <div class="col">
+           <h5 class="food-name">Pasta/spaghetti</h5>
+      </div>
+      <div class="col food-price h3 text-warning text-end">($2500)</div>
+      </div>
+    <p class="card-text">
+      <span class="text-warning food-content-heading h5">Components:</span><br />
+   <span class="food-content"> Pasta | Chicken | salad
+   </span>
+    </p>
+   <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#reserveModal">Reserve Now</button>
+<button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#orderModal">Order Now</button>
+  </div></div>
+    </div>
+    
+    
+    <div class="carousel-item">
+     <div class="card mx-auto">
+          <div class="hover-swap">
+  <img src="./assets/spoon-gallery-section/bg-10.jpg" class="card-img-top img first" alt="Jollof Rice">
+  <img class="effect img-thumbnail img second rounded" src="./assets/spoon-gallery-section/bg-15.jpg" alt="JollofRice-2"  >
+         </div>   
+  <div class="card-body bg-dark text-light">
+    <div class="row">
+        <div class="col">
+           <h5 class="food-name">Jollof Rice</h5>
+      </div>
+      <div class="col food-price h3 text-warning text-end">($5500)</div>
+      </div>
+    <p class="card-text">
+    <span class="text-warning food-content-heading h5">Components:</span><br />
+   <span class="food-content"> Jollof rice | Meat | Salad
+   </span>
+    </p>
+   <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#reserveModal">Reserve Now</button>
+<button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#orderModal">Order Now</button>
+  </div></div>
+    </div>
+    
+    
+    <div class="carousel-item">
+     <div class="card mx-auto">
+        <div class="hover-swap">
+  <img src="./assets/spoon-gallery-section/bg-30.jpg" class="card-img-top img first" alt="White Rice" >
+  <img class="effect img-thumbnail img second rounded" src="./assets/spoon-gallery-section/bg-28.jpg" alt="White Rice-2"  >
+  </div>
+  <div class="card-body bg-dark text-light">
+    <div class="row">
+        <div class="col">
+           <h5 class="food-name">White Rice</h5>
+      </div>
+      <div class="col food-price h3 text-warning text-end">($4500)</div>
+      </div>
+    <p class="card-text">
+    <span class="text-warning food-content-heading h5">Components:</span><br />
+   <span class="food-content"> White Rice | Plantains | Stew(Sauce) | Meat
+   </span>
+    </p>
+   <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#reserveModal">Reserve Now</button>
+<button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#orderModal">Order Now</button>
+  </div></div>
+    </div>
+    
+    
+    <div class="carousel-item">
+     <div class="card mx-auto">
+           <div class="hover-swap">
+  <img src="./assets/spoon-gallery-section/bg-21.jpg" class="card-img-top img first" alt="Steak">
+  <img class="effect img-thumbnail img second rounded" src="./assets/spoon-gallery-section/bg-35.jpg" alt="steak 2">
+  </div>
+  <div class="card-body bg-dark text-light">
+    <div class="row">
+        <div class="col">
+           <h5 class="food-name">Meat steak</h5>
+      </div>
+      <div class="col food-name h3 text-warning text-end">($10000)</div>
+      </div>
+    <p class="card-text">
+    <span class="text-warning food-content-heading h5">Components:</span><br />
+   <span class="food-content"> Grilled Meat | Tomato | Salad 
+   </span>
+    </p>
+   <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#reserveModal">Reserve Now</button>
+<button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#orderModal">Order Now</button>
+  </div></div>
+    </div>
+    
+    
+    <div class="carousel-item">
+     <div class="card mx-auto">
+           <div class="hover-swap">
+  <img src="./assets/spoon-gallery-section/bg-27.jpg" class="card-img-top img first" alt="Coconut Rice">
+  <img class="effect img-thumbnail img second rounded" src="./assets/spoon-gallery-section/bg-26.jpg" alt="Coconut Rice-2" >
+  </div>
+  <div class="card-body bg-dark text-light">
+    <div class="row">
+        <div class="col">
+           <h5 class="food-name">Coconut Rice</h5>
+      </div>
+      <div class="col food-price h3 text-warning text-end">($4300)</div>
+      </div>
+    <p class="card-text">
+    <span class="text-warning food-content-heading h5">Components:</span><br />
+   <span class="food-content"> Rice | Beans | Salad | Veggies
+   </span>
+    </p>
+   <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#reserveModal">Reserve Now</button>
+<button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#orderModal">Order Now</button>
+  </div></div>
+    </div>
+    
+    
+    <div class="carousel-item">
+     <div class="card mx-auto">
+           <div class="hover-swap">
+  <img src="./assets/spoon-gallery-section/bg-31.jpg" class="card-img-top img first" alt="Beans">
+  <img class="effect img-thumbnail img second rounded" src="./assets/spoon-gallery-section/bg-5.jpg" alt="Beans-2">
+  </div>
+  <div class="card-body bg-dark text-light">
+    <div class="row">
+        <div class="col">
+           <h5 class="food-name">Beans/Ewa Agoin</h5>
+      </div>
+      <div class="col food-price h3 text-warning text-end">($2800)</div>
+      </div>
+    <p class="card-text">
+    <span class="text-warning food-content-heading h5">Components:</span><br />
+   <span class="food-content"> Beans | Meat
+   </span>
+    </p>
+   <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#reserveModal">Reserve Now</button>
+<button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#orderModal">Order Now</button>
+  </div></div>
+    </div>
+    
+    
+    <div class="carousel-item">
+     <div class="card mx-auto">
+        <div class="hover-swap">
+  <img src="./assets/spoon-gallery-section/bg-37.jpg" class="card-img-top img first" alt="Yam porridge">
+  <img class="effect img-thumbnail img second rounded" src="./assets/spoon-gallery-section/bg-38.jpg" alt="Yam porridge-2"  >
+  </div>
+  <div class="card-body bg-dark text-light">
+    <div class="row">
+        <div class="col">
+           <h5 class="food-name">Yam and Egg</h5>
+      </div>
+      <div class="col food-price h3 text-warning text-end">($3300)</div>
+      </div>
+          <p class="card-text">
+    <span class="text-warning food-content-heading h5">Components:</span><br />
+   <span class="food-content"> Yam | Egg | plantain
+   </span>
+    </p>
+   <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#reserveModal">Reserve Now</button>
+<button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#orderModal">Order Now</button>
+  </div></div>
+    </div>
+   
+   
+   <div class="carousel-item">
+     <div class="card mx-auto">
+           <div class="hover-swap">
+  <img src="./assets/spoon-gallery-section/bg-33.jpg" class="card-img-top img first" alt="White Rice and Beans">
+  <img class="effect img-thumbnail img second rounded" src="./assets/spoon-gallery-section/bg-34.jpg" alt="White Rice and Beans-2">
+  </div>
+  <div class="card-body bg-dark text-light">
+    <div class="row">
+        <div class="col">
+           <h5 class="food-name">White Rice and Beans</h5>
+      </div>
+      <div class="col food-price h3 text-warning text-end">($5000)</div>
+      </div>
+    <p class="card-text">
+    <span class="text-warning food-content-heading">Components:</span><br />
+   <span class="food-content"> White Rice | Beans | Stew(Sauce) | Plantain | Fish/Meat stockings
+   </span>
+    </p>
+    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#reserveModal">Reserve Now</button>
+<button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#orderModal">Order Now</button>
+  </div></div>
+    </div>
+  </div>
+
+  
+  <div class="container">
+<button class="carousel-control-prev menu-carousel-control-prev opacity-100" type="button" data-bs-target="#carouselExampleIndicator1" data-bs-slide="prev">
+    <span class="carousel-control-prev" aria-hidden="true"><i class="fa fa-arrow-alt-circle-left text-warning bg-dark rounded-circle" style="font-size: 3rem;"></i></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+
+  <button class="carousel-control-next menu-carousel-control-next opacity-100" type="button" data-bs-target="#carouselExampleIndicator1" data-bs-slide="next">
+    <span class="carousel-control-next" aria-hidden="true"><i class="fa fa-arrow-alt-circle-right text-warning bg-dark rounded-circle" style="font-size: 3rem;"></i></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+  </div>
+</div>
+   </main>
+</section>
+
+
+
+
+
+
+
+
+
+
+ <!-- Swallow Section -->
+ 
+  <!--swallow heading-->
+ <section class="menu-section-bg px-3"><br>
+  <span class="text-warning"><hr /></span>
+  <div class="text-center text-white container">
+    <h2 class="text-warning categories-heading h1 pt-4">Swallow Favorites</h2>
+    <p class="categories-description text-light">featuring soups, meats, swallow and other hand-friendly meals
+    </p>
+ </div>
+ <span class="text-light"><hr /></span>
+
+ <main class="swallow-section border border-warning rounded py-3">
+  <span class="text-warning"><hr /></span>
+      <h2 class="text-center categories-heading text-warning h3 mt-4">Swallow Varieties</h2>
+      <p class="text-center text-light categories-description">Prices for one <span class="fw-bold">WRAP</span></p>
+<span class="text-warning"><hr /></span>
+
+<!--cards-->
+<div id="carouselExampleIndicator2" class="carousel slide" data-bs-ride="ride" data-bs-interval="4000">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicator2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicator2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicator2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicator2" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicator2" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicator2" data-bs-slide-to="5" aria-label="Slide 6"></button>
+  </div>
+  
+  
+  <!----lets continue the polish here tomorrrow-->
+  <div class="carousel-inner ">
+    <div class="carousel-item active">
+          
+     <div class="card mx-auto">
+  <img src="./assets/swallow-gallery-section/Amala.jpg" class="card-img-top h-50 w-100" alt="Amala" >
+  <div class="card-body bg-dark text-light">
+    <div class="row">
+        <div class="col">
+           <h5 class="food-name">Amala</h5>
+      </div>
+      <div class="col food-price h3 text-warning text-end">($500)</div>
+      </div>
+  </div></div>
+    </div>
+    
+    
+    <div class="carousel-item">
+     <div class="card mx-auto">
+  <img src="./assets/swallow-gallery-section/pounded-yam.jpg" class="card-img-top  h-50 w-100" alt="Pounded yam">
+  <div class="card-body bg-dark text-light">
+    <div class="row">
+        <div class="col">
+           <h5 class="food-name">Pounded Yam</h5>
+      </div>
+      <div class="col food-price h3 text-warning text-end">($700)</div>
+      </div>
+  </div></div>
+    </div>
+   
+
+    <div class="carousel-item">
+     <div class="card mx-auto">
+  <img src="./assets/swallow-gallery-section/fufu.jpg" class="card-img-top w-100 h-50 " alt="Fufu">
+  <div class="card-body bg-dark text-light">
+    <div class="row">
+        <div class="col">
+           <h5 class="food-name">Fufu</h5>
+      </div>
+      <div class="col food-price h3 text-warning text-end">($600)</div>
+      </div>
+  </div></div>
+    </div>
+    
+    
+    <div class="carousel-item">
+     <div class="card mx-auto">
+  <img src="./assets/swallow-gallery-section/eba.jpg" class="card-img-top w-100 h-25 " alt="Eba" >
+  <div class="card-body bg-dark text-light">
+  <div class="row">
+        <div class="col">
+           <h5 class="food-name">Eba</h5>
+      </div>
+      <div class="col food-price h3 text-warning text-end">($450)</div>
+      </div>
+  </div></div>
+    </div>
+    
+    
+    <div class="carousel-item">
+     <div class="card mx-auto">
+  <img src="./assets/swallow-gallery-section/tuwo.jpg" class="card-img-top w-100 h-50 " alt="Tuwo Shinkafa">
+  <div class="card-body bg-dark text-light">
+    <div class="row">
+        <div class="col">
+           <h5 class="food-name">Tuwo Shinkafa</h5>
+      </div>
+      <div class="col food-price h3 text-warning text-end">($750)</div>
+      </div>
+  </div></div>
+    </div>
+    
+    
+    <div class="carousel-item">
+     <div class="card mx-auto"   >
+  <img src="./assets/swallow-gallery-section/semo-vita.jpg" class="card-img-top  h-50 w-100" alt="Semo-Vita">
+  <div class="card-body bg-dark text-light">
+   <div class="row">
+        <div class="col">
+           <h5 class="food-name">Semo-Vita</h5>
+      </div>
+      <div class="col food-price h3 text-warning text-end">($600)</div>
+      </div>
+  </div></div>
+    </div>
+  </div>
+  
+<button class="carousel-control-prev menu-carousel-control-prev opacity-100" type="button" data-bs-target="#carouselExampleIndicator2" data-bs-slide="prev">
+    <span class="carousel-control-prev" aria-hidden="true"><i class="fa fa-arrow-alt-circle-left text-warning bg-dark rounded-circle" style="font-size: 3rem;"></i></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  
+  <button class="carousel-control-next menu-carousel-control-next opacity-100" type="button" data-bs-target="#carouselExampleIndicator2" data-bs-slide="next">
+    <span class="carousel-control-next" aria-hidden="true"><i class="fa fa-arrow-alt-circle-right text-warning bg-dark rounded-circle" style="font-size: 3rem;"></i></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+ </main>
+
+
+
+
+
+ <main class="soups border border-warning rounded py-5 my-5">
+  
+      <h2 class="categories-heading text-warning text-center">Soups</h2>
+      </div>
+     <span class="text-light"><hr /></span>
+    
+<!--soups card section-->
+<div id="carouselExampleIndicator3" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicator3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicator3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicator3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicator3" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicator3" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicator3" data-bs-slide-to="5" aria-label="Slide 6"></button>
+  </div>
+  
+  
+  
+  <div class="carousel-inner ">
+    <div class="carousel-item active">
+      <div class="card mx-auto">
+         <div class="hover-swap">
+  <img src="./assets/swallow-gallery-section/egusi-3.jpg" class="card-img-top img first" alt="Egusi Soup" >
+  <img class="effect img second img-thumbnail rounded" src="./assets/swallow-gallery-section/egusi-4.jpg" alt="Egusi soup-2">
+     </div>
+  <div class="card-body bg-dark text-light">
+    <div class="row">
+        <div class="col">
+           <h5 class="food-name">Egusi soup</h5>
+      </div>
+      <div class="col food-price h3 text-warning text-end">($8500)</div>
+      </div>
+   <p class="card-text"><span class="text-warning food-content-heading h5">Components:</span><br />
+   <span class="food-content"> Egusi | Ugwu | Meat | Stew
+   </span>
+    </p>
+   <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#reserveModal">Reserve Now</button>
+<button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#orderModal">Order Now</button>
+  </div></div>
+    </div>
+    
+    
+    <div class="carousel-item">
+     <div class="card mx-auto">
+       <div class="hover-swap">
+  <img src="./assets/swallow-gallery-section/efo-5.jpg" class="card-img-top img first" alt="Vegetable soup">
+  <img class="effect rounded img second" src="./assets/swallow-gallery-section/efo-3.jpg" alt="Vegetable soup2"  >
+   </div>
+  <div class="card-body bg-dark text-light">
+    <div class="row">
+        <div class="col">
+           <h5 class="food-name">Vegetable soup/Efo</h5>
+      </div>
+      <div class="col food-price h3 text-warning text-end">($9500)</div>
+      </div>
+    <p class="card-text"><span class="text-warning food-content-heading h5">Components:</span><br />
+   <span class="food-content"> Vegetable | Fish | Ponmo | Prawn/Crayfish
+   </span>
+    </p>
+        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#reserveModal">Reserve Now</button>
+<button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#orderModal">Order Now</button>
+  </div></div>
+    </div>
+    
+    
+    <div class="carousel-item">
+     <div class="card mx-auto">
+       <div class="hover-swap">
+  <img src="./assets/swallow-gallery-section/okra-4.jpg" class="card-img-top img first" alt="Okra soup">
+  <img class="effect rounded img second img-thumbnail" src="./assets/swallow-gallery-section/okra-3.jpg" alt="okro soup-2"  >
+    </div>
+  <div class="card-body bg-dark text-light">
+    <div class="row">
+        <div class="col">
+           <h5 class="food-name">Okra soup</h5>
+      </div>
+      <div class="col food-price h3 text-warning text-end">($7000)</div>
+      </div>
+    <p class="card-text">
+    <span class="text-warning food-content-heading h5">Components:</span><br />
+   <span class="food-content"> Okra | Catfish | Ponmo | Prawn | Meat
+   </span>
+    </p>
+      <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#reserveModal">Reserve Now</button>
+<button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#orderModal">Order Now</button>
+  </div></div>
+    </div>
+    
+    
+    <div class="carousel-item">
+     <div class="card mx-auto">
+        <div class="hover-swap">
+  <img src="./assets/swallow-gallery-section/gbegiri-2.jpg" class="card-img-top img first" alt="Beans soup">
+  <img class="effect rounded img second img-thumbnail" src="./assets/swallow-gallery-section/gbegiri-1.jpg" alt="gbegiri-2"  >
+  </div>
+  <div class="card-body bg-dark text-light">
+   <div class="row">
+        <div class="col">
+           <h5 class="food-name">Beans soup / Gbegiri</h5>
+      </div>
+      <div class="col food-price h3 text-warning text-end">($6000)</div>
+      </div>
+    <p class="card-text">
+    <span class="text-warning food-content-heading h5">Components:</span><br />
+   <span class="food-content"> Beans | Bitter leaf(Ewuro) | Fish/Meat stockings
+   </span>
+    </p>
+      <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#reserveModal">Reserve Now</button>
+<button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#orderModal">Order Now</button>
+  </div></div>
+    </div>
+    
+    
+    <div class="carousel-item">
+     <div class="card mx-auto">
+        <div class="hover-swap">
+  <img class="effect img second rounded img-thumbnail" src="./assets/swallow-gallery-section/ogbono-1.jpg" alt="ogbono-1"  >
+  <img src="./assets/swallow-gallery-section/ogbono-3.jpg" class="card-img-top img first" alt="Ogbono soup-2" >
+        </div>
+  <div class="card-body bg-dark text-light">
+    <div class="row">
+        <div class="col">
+           <h5 class="food-name">Ogbono soup</h5>
+      </div>
+      <div class="col food-price h3 text-warning text-end">($8200)</div>
+      </div>
+    <p class="card-text">
+    <span class="text-warning food-content-heading h5">Components:</span><br />
+   <span class="food-content"> Ogbono | Bitter leaf(Ewuro) | Meat
+   </span>
+    </p>
+       <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#reserveModal">Reserve Now</button>
+<button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#orderModal">Order Now</button>
+</div></div>
+    </div>
+    
+    
+      <div class="carousel-item">
+      <div class="card mx-auto">
+        <div class="hover-swap">
+  <img src="./assets/swallow-gallery-section/ewedu-3.jpg" class="card-img-top img first" alt="eweduSoup-1">
+  <img class="effect rounded img second img-thumbnail" src="./assets/swallow-gallery-section/ewedu-1.jpg" alt="eweduSoup-2" >
+    </div>
+  <div class="card-body bg-dark text-light">
+    <div class="row">
+        <div class="col">
+           <h5 class="food-name">Ewedu soup</h5>
+      </div>
+      <div class="col food-price h3 text-warning text-end">($8800)</div>
+      </div>
+    <p class="card-text">
+    <span class="text-warning food-content-heading h5">Components:</span><br />
+   <span class="food-content"> Ewedu | Stew | Fish | Meat | Ponmo
+   </span>
+    </p>
+     <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#reserveModal">Reserve Now</button>
+<button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#orderModal">Order Now</button>
+  </div></div>
+    </div>
+    </div>
+  
+  
+  
+<button class="carousel-control-prev menu-carousel-control-prev opacity-100" type="button" data-bs-target="#carouselExampleIndicator3" data-bs-slide="prev">
+    <span class="carousel-control-prev" aria-hidden="true"><i class="fa fa-arrow-alt-circle-left text-warning bg-dark rounded-circle" style="font-size: 3rem;"></i></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  
+  <button class="carousel-control-next menu-carousel-control-next opacity-100" type="button" data-bs-target="#carouselExampleIndicator3" data-bs-slide="next">
+    <span class="carousel-control-next" aria-hidden="true"><i class="fa fa-arrow-alt-circle-right text-warning bg-dark rounded-circle" style="font-size: 3rem;"></i></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+ </main>
+</section>
+
+
+
+ <a href="#top" class="btn btn-warning floating-btn shadow-lg">
+    <i class="fa fa-arrow-up"></i>
+  </a>
+
+ <!--Forms Modal-->
+
+<!---Reserve Now Modal:-->
+<div class="modal fade" id="reserveModal" tabindex="-1" aria-labelledby="reserveModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content bg-dark">
+      <div class="modal-header">
+        <h5 class="modal-title text-danger" id="reserveModalLabel">Reserve Now</h5>
+        <button type="button" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Reservation form goes here -->
+        <form class="container border border-warning px-2 py-3 bg-dark text-light my-5">
+
+<h2 class="text-center text-warning">Reservation Form</h2>
+<span class="text-warning"><hr /></span>
+  <div class="mx-2">
+    <form>
+    <label for="name" class="form-label">Name:</label>
+    <input type="text" id="reserve-name" name="name" class="form-control">
+  </div>
+  <div class="mx-2">
+    <label for="phone" class="form-label">Phone:</label>
+    <input type="tel" id="reserve-phone" name="phone" class="form-control">
+  </div>
+  <div class="mx-2">
+    <label for="date" class="form-label">Date:</label>
+    <input type="date" id="date" name="date" class="form-control">
+  </div>
+  <div class="mx-2">
+    <label for="time" class="form-label">Time:</label>
+    <input type="time" id="time" name="time" class="form-control">
+  </div>
+  <div class="mx-2">
+    <label for="partySize" class="form-label">Party Size:</label>
+    <input type="number" id="partySize" name="partySize" class="form-control">
+  </div>
+  <br />
+  <!-- Button trigger modal -->
+ <button type="button" id="btn-warning" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModals" onclick="check()">
+   Reserve Now
+ </button>
+</form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--Order Now Modal:-->
+<div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content bg-dark">
+      <div class="modal-header">
+        <h5 class="modal-title text-danger" id="orderModalLabel">Order Now</h5>
+        <button type="button" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Order form goes here -->
+       <form class="bg-dark container border border-warning px-2 py-3 text-light my-5">
+
+<h2 class="text-center text-warning">Order Form</h2>
+
+<span class="text-warning"><hr /></span>
+  <div class="mx-2">
+    <label for="name" class="form-label">Name:</label>
+    <input type="text" id="order-name" name="name" class="form-control">
+  </div>
+  <div class="mx-2">
+    <label for="phone" class="form-label">Phone:</label>
+    <input type="tel" id="order-phone" name="phone" class="form-control">
+  </div>
+  <div class="mx-2">
+    <label for="order" class="form-label">Order:</label>
+    <textarea id="order" name="order" class="form-control"></textarea>
+  </div>
+  <br />
+  <!-- Button trigger modal -->
+<button type="button" id="btn-warning" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModals" onclick="check()">Order Now</button>
+</form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Successful Action Modal -->
+<div class="modal fade" id="exampleModals" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+     <div class="alert alert-success alert-dismissible">
+  <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+  <strong class="h2">Successful!</strong> <br />Reservation or Order placed successfully. We will contact you soon to confirm your Reservation Time or Order delivery location."<br /><br>
+  Thank you for choosing Elitz patronage🙏,<br>
+  Have a good day😃
+     </div>
+    </div>
+  </div>
+</div>
+ 
+</body>
+</html>
