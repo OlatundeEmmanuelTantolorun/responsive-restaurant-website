@@ -17,7 +17,11 @@ A fully responsive multi-page restaurant website built using HTML, CSS, and Boot
 
 ## Live Demo
 
-()
+The website is deployed on vercel.
+Web analytics are enabled to track visitor traffic in real time.
+
+[View Live Site]
+(https://responsive-restaurant-website-three.vercel.app/)
 
 ## Author
 
