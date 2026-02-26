@@ -788,7 +788,7 @@ swallow-heading {
   background: linear-gradient(
     135deg,
     rgba(225, 140, 0, 0.1) 0%,
-    rgba(0, 0, 0, 0.85) 70%
+    rgba(0, 0, 0, 0.6) 70%
   );
   border-radius: 15px;
   padding: 3rem 1rem;
