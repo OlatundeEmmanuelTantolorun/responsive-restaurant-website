@@ -1,6 +1,21 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-463414Z5FL"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-463414Z5FL");
+    </script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Elitz-home</title>
@@ -150,16 +165,5 @@
         </div>
       </div>
     </section>
-
-    <!-- Vercel Analytics -->
-    <script>
-      window.va =
-        window.va ||
-        function () {
-          window.vaq = window.vaq || [];
-        };
-    </script>
-
-    <script defer src="https://va.vercel-scripts.com/v1/va.min.js"></script>
   </body>
 </html>
